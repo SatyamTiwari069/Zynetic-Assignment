@@ -1,60 +1,28 @@
-# Bookstore Management System API
+# API for the Bookstore Management System 
+This project offers a RESTful API for bookstore management, enabling users to add, retrieve, update, and remove book information, among other tasks. 
 
-This project provides a RESTful API for managing a bookstore, allowing users to perform operations such as adding, retrieving, updating, and deleting book information.
+## Features -
+**Database Schema**: Stores book information such as title, author, ISBN, price, and quantity in a MySQL database. -
+**API Endpoints**: Offers endpoints for carrying out CRUD operations on books: - Adding a new book - Getting every book back Finding a specific book using its ISBN Revising book information Eliminating a book
+**Authentication**: Uses simple authentication to limit access to specific endpoints. 
+**Documentation**: Provides clear documentation of API endpoints and usage using Swagger. 
+**Testing**: Offers unit tests for the API endpoints to guarantee functionality and efficiently manage errors and edge cases.
 
-## Features
+## Technology Employed Flask is a Python web framework used to create RESTful APIs.
 
-- **Database Schema**: Utilizes a MySQL database to store book details, including title, author, ISBN, price, and quantity.
-- **API Endpoints**: Provides endpoints for performing CRUD operations on books:
-  - Adding a new book
-  - Retrieving all books
-  - Retrieving a specific book by ISBN
-  - Updating book details
-  - Deleting a book
-- **Authentication**: Implements basic authentication to restrict access to certain endpoints.
-- **Documentation**: Includes Swagger for clear documentation of API endpoints and usage.
-- **Testing**: Provides unit tests for the API endpoints to ensure functionality and handle edge cases and errors effectively.
+## Setup 1. Install dependencies: ```bashpip install -r requirements.txt ```
+2. Configure the database: Set up the URI for the MySQL database in app.py. Make sure the required table book is included when creating the database.
+ 3. Launch the program: Open the application folder and execute the file as follows: ```bash python app.py ```
 
-## Technologies Used
-
-- Flask: Python web framework for developing the RESTful API.
-- Flask-SQLAlchemy: SQLAlchemy integration for database management.
-- Flask-HTTPAuth: Library for implementing basic authentication in Flask applications.
-- Flask-Swagger: Integration of Swagger/OpenAPI Specification for API documentation.
-- MySQL: Relational database management system for storing book details.
-
-## Installation
-
-1. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
-3. Set up the database:
-- Configure the MySQL database URI in app.py.
-- Ensure the database is created with the necessary table book.
-4. Run the application:
-   Navigate to application folder and run the file as:
-   ```bash
-   python app.py
-   ```
 ## API Documentation
+Running the application and going to the Swagger UI endpoint (/apidocs) in a web browser will provide access to the Swagger API documentation.
 
-The API documentation is available in Swagger and can be accessed by running the application and visiting the Swagger UI endpoint (/apidocs) in a web browser.
+## Examining To guarantee the accuracy and dependability of the API endpoints, unit tests are incorporated.
+Use the following command to execute the tests: ```bash Python test_app.py `` 
 
-## Testing
-
-Unit tests are included to ensure the correctness and reliability of the API endpoints. To run the tests, use the following command:
-```bash
-python test_app.py
-```
 ## Postman Screenshots:
 
-![addbook](outputs/postman-addbook.png)
+![postman-getbookbyisbn](https://github.com/user-attachments/assets/33285d75-0738-4de7-8ffe-0521650e7c05)
+![postman-getbook](https://github.com/user-attachments/assets/3c267848-5c74-4a4f-825a-c6985267f48c)
+![postman-addbook](https://github.com/user-attachments/assets/81275e0d-9306-4e2f-8bc4-d79b6f06cacc)
 
-
-![getbook](outputs/postman-getbook.png)
-
-
-![getbook](outputs/postman-getbookbyisbn.png)
-
-   

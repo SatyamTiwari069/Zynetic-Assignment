@@ -49,12 +49,14 @@ python test_app.py
 ```
 ## Postman Screenshots:
 
-![addbook](outputs/postman-addbook.png)
+![postman-addbook](https://github.com/user-attachments/assets/5dd1273c-2765-4098-b68b-2e2a0f68f648)
 
 
-![getbook](outputs/postman-getbook.png)
+![postman-getbook](https://github.com/user-attachments/assets/ebca2656-6219-4ca6-aefd-978ea755d8ca)
 
 
-![getbook](outputs/postman-getbookbyisbn.png)
+![postman-getbookbyisbn](https://github.com/user-attachments/assets/af17c440-4d19-444d-8506-634e9cf96103)
 
-   
+
+
+

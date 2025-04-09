@@ -1,10 +1,15 @@
 # API for the Bookstore Management System 
 This project offers a RESTful API for bookstore management, enabling users to add, retrieve, update, and remove book information, among other tasks. 
 
-## Features -
-**Database Schema**: Stores book information such as title, author, ISBN, price, and quantity in a MySQL database. -
-**API Endpoints**: Offers endpoints for carrying out CRUD operations on books: - Adding a new book - Getting every book back Finding a specific book using its ISBN Revising book information Eliminating a book
+## Features 
+
+**Database Schema**: Stores book information such as title, author, ISBN, price, and quantity in a MySQL database.
+(ISBN = ID)
+
+**API Endpoints**: Offers endpoints for carrying out CRUD operations on books: - Adding a new book - Getting every book back Finding a specific book using its ISBN(ID) Revising book information Eliminating a book
+
 **Authentication**: Uses simple authentication to limit access to specific endpoints. 
+
 **Documentation**: Provides clear documentation of API endpoints and usage using Swagger. 
 **Testing**: Offers unit tests for the API endpoints to guarantee functionality and efficiently manage errors and edge cases.
 
